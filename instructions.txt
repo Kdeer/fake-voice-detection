@@ -1,3 +1,5 @@
+
+Instructions to run a pretrained model
 1. Git Clone the repository
 2. Set a venv, with python 3.6 as the interpreter
 3. run in the venv terminal, go to code directory
@@ -21,7 +23,7 @@ change line 233
 to
 	original_backend = model_weights_group['backend']
 
-change line 297
+change line 296
 	training_config = json.loads(training_config.decode('utf-8'))
 to
 	training_config = json.loads(training_config)

@@ -12,8 +12,8 @@ tflogs/
 input/
 *.npy
 .idea/
+venv/
 ASVspoof2019_LA_train/
-inference_data/
 ASVspoof2019_LA_cm_protocols/
 ASVspoof2019_LA_asv_protocols/
 

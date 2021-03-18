@@ -5,7 +5,12 @@ Instructions to run a pretrained model
 3. run in the venv terminal, go to code directory
 	pip install -r requirements
 
-4. Change the code in the kera's library as follows
+4. run inference.py in venv
+	python inference.py
+	if an error like str obj doesn't have decode method, then try step 5
+
+
+5. Change the code in the kera's library as follows
 venv -> lib -> site-packages -> keras -> engine -> saving.py 
 change line 224
 	model_config = json.loads(model_config.decode('utf-8'))
@@ -29,8 +34,8 @@ to
 	training_config = json.loads(training_config)
 
 
-5. run inference.py in venv
+6. run inference.py in venv
 	python inference.py
 
 
-6. you can put your own .wav file into the "data/unlabeled" folder to test, but the accuracy is very bad.
+7. you can put your own .wav file into the "data/unlabeled" folder to test, but the accuracy is very bad.

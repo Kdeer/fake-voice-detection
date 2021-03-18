@@ -435,13 +435,13 @@ if model_params['use_default']:
                     'model_save_dir':'fitted_objects'
                     }
 
-run_on_foundations = True
+run_on_foundations = False
 if run_on_foundations:
     base_data_path = ['/data/logical_access']
 else:
     base_data_path = ['../data/logical_access']
 
-measure_performance_only = False
+measure_performance_only = True
 
 
 

@@ -1,0 +1,34 @@
+1. Git Clone the repository
+2. Set a venv, with python 3.6 as the interpreter
+3. run in the venv terminal, go to code directory
+	pip install -r requirements
+
+4. Change the code in the kera's library as follows
+venv -> lib -> site-packages -> keras -> engine -> saving.py 
+change line 224
+	model_config = json.loads(model_config.decode('utf-8'))
+To
+	model_config = json.loads(model_config)
+
+
+change line 229
+	original_keras_version = model_weights_group['keras_version'].decode('utf8')
+to
+	original_keras_version = model_weights_group['keras_version']
+
+change line 233
+	original_backend = model_weights_group['backend'].decode('utf8')
+to
+	original_backend = model_weights_group['backend']
+
+change line 297
+	training_config = json.loads(training_config.decode('utf-8'))
+to
+	training_config = json.loads(training_config)
+
+
+5. run inference.py in venv
+	python inference.py
+
+
+6. you can put your own .wav file into the "data/unlabeled" folder to test, but the accuracy is very bad.

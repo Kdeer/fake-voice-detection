@@ -1,7 +1,6 @@
 *.ipynb_checkpoints
 *.DS_Store
 *.csv
-*.h5
 *.jpg
 *.jpeg
 *.csv

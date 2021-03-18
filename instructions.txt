@@ -1,7 +1,7 @@
 
 Instructions to run a pretrained model
 1. Git Clone the repository
-2. Set a venv, with python 3.6 as the interpreter
+2. Set a venv, with python 3.6 as the interpreter, you have to use python 3.6 as the interpreter.
 3. run in the venv terminal, go to code directory
 	pip install -r requirements
 
